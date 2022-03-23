@@ -1,0 +1,85 @@
+The fundamental feature of linear algebra are vectors, these are the objects having both direction and magnitude. In Python, NumPy arrays can be used to depict a vector.
+
+There are mainly two ways of getting the magnitude of vector:
+
+By defining an explicit function which computes the magnitude of a given vector based on the below mathematical formula: if V is vector such that, V = (a, b, c) then ||V|| = ?(a*a + b*b + c*c) Here are some programs which computes the magnitude of a vector following the above approach:
+
+
+
+
+
+import numpy import math def magnitude(vector): return math.sqrt( sum ( pow (element, 2 ) for element in vector)) v = numpy.array([ 0 , 1 , 2 , 3 , 4 ]) print ( 'Vector:' , v) print ( 'Magnitude of the Vector:' , magnitude(v)) Output: Vector: [0 1 2 3 4] Magnitude of the Vector: 5.477225575051661 Below is another example with the same approach:
+
+
+
+
+
+
+
+
+
+import numpy import math def magnitude(vector): return math.sqrt( sum ( pow (element, 2 ) for element in vector)) print ( 'Magnitude of the Vector:' , magnitude(numpy.array([ 1 , 2 , 3 ]))) Output: Magnitude of the Vector: 3.7416573867739413
+
+By using the norm() method in linalg module of NumPy library. The Linear Algebra module of NumPy offers various methods to apply linear algebra on any NumPy array. Below are some programs which use numpy.linalg.norm() to compute the magnitude of a vector:
+
+
+
+
+
+import numpy v = numpy.array([ 1 , 2 , 3 ]) print ( 'Vector:' , v) print ( 'Magnitude of the Vector:' , numpy.linalg.norm(v)) Output: Vector: [1 2 3] Magnitude of the Vector: 3.7416573867739413 An additional argument ord can be used to compute the nth order of the norm() of a vector.
+
+
+
+
+
+import numpy v = numpy.array([ 0 , 1 , 2 , 3 , 4 ]) print ( 'Vector:' , v) print ( 'Magnitude of the Vector:' , numpy.linalg.norm(v)) print ( 'ord is 0: ' , numpy.linalg.norm(v, ord = 0 )) print ( 'ord is 1: ' , numpy.linalg.norm(v, ord = 1 )) print ( 'ord is 2: ' , numpy.linalg.norm(v, ord = 2 )) print ( 'ord is 3: ' , numpy.linalg.norm(v, ord = 3 )) print ( 'ord is 4: ' , numpy.linalg.norm(v, ord = 4 )) Output: Vector: [0 1 2 3 4] Magnitude of the Vector: 5.477225575051661 ord is 0: 4.0 ord is 1: 10.0 ord is 2: 5.477225575051661 ord is 3: 4.641588833612778 ord is 4: 4.337613136533361
+
+Attention geek! Strengthen your foundations with the Python Programming Foundation Course and learn the basics.
+
+To begin with, your interview preparations Enhance your Data Structures concepts with the Python DS Course. And to begin with your Machine Learning Journey, join the Machine Learning – Basic Level CourseTo create static, animated and interactive visualizations of data, we use the Matplotlib module in Python. The below programs will depict 3D wireframe. visualization of data in Python. In-order to visualize data using 3D wireframe we require some modules from matplotlib, mpl_toolkits and numpy library.
+
+Example 1:
+
+
+
+Python3
+
+
+
+
+
+from mpl_toolkits.mplot3d import axes3d from matplotlib import pyplot fig = pyplot.figure() wf = fig.add_subplot( 111 , projection = '3d' ) x, y, z = axes3d.get_test_data( 0.05 ) wf.plot_wireframe(x,y,z, rstride = 2 , cstride = 2 ,color = 'green' ) wf.set_title( 'Example 1' ) pyplot.show()
+
+Output:
+
+
+
+In the above program, a 3D wireframe is plotted using test values for coordinates.
+
+Example 2:
+
+
+
+Python3
+
+
+
+
+
+from mpl_toolkits import mplot3d import numpy from matplotlib import pyplot a = numpy.linspace( - 5 , 5 , 25 ) b = numpy.linspace( - 5 , 5 , 25 ) x, y = numpy.meshgrid(a, b) z = numpy.sin(numpy.sqrt(x * * 2 + y * * 2 )) fig = pyplot.figure() wf = pyplot.axes(projection = '3d' ) wf.plot_wireframe(x, y, z, color = 'green' ) wf.set_title( 'Example 2' ) pyplot.show()
+
+Output:
+
+
+
+Attention geek! Strengthen your foundations with the Python Programming Foundation Course and learn the basics.
+
+To begin with, your interview preparations Enhance your Data Structures concepts with the Python DS Course. And to begin with your Machine Learning Journey, join the Machine Learning – Basic Level CourseSmall Data: It can be defined as small datasets that are capable of impacting decisions in the present. Anything that is currently ongoing and whose data can be accumulated in an Excel file. Small Data is also helpful in making decisions, but does not aim to impact the business to a great extent, rather for a short span of Small data can be described as small datasets that are capable of having an influence on current decisions. Almost everything currently in progress and the data of which can be acquired in an Excel file. Small data is also useful in decision-making but is not intended to have a large impact on business, rather for a short period of time.
+
+In nutshell, data that is simple enough to be used for human understanding in such a volume and structure that makes it accessible, concise, and workable is known as small data.
+
+Big Data: It can be represented as large chunks of structured and unstructured data. The amount of data stored is immense. It is therefore important for analysts to thoroughly dig the whole thing into making it relevant and useful to make proper business decisions.
+
+In short, datasets that are really huge and complex that conventional data processing techniques can not manage them are known as big data.
+
+Below is a table of differences between Small Data and Big Data: Feature Small Data Big Data Technology Traditional Modern Collection Generally, it is obtained in an organized manner than is inserted into the database The Big Data collection is done by using pipelines having queues like AWS Kinesis or Google Pub / Sub to balance high-speed data Volume Data in the range of tens or hundreds of Gigabytes Size of Data is more than Terabytes Analysis Areas Data marts(Analysts) Clusters(Data Scientists), Data marts(Analysts) Quality Contains less noise as data is less collected in a controlled manner Usually, the quality of data is not guaranteed Processing It requires batch-oriented processing pipelines It has both batch and stream processing pipelines Database SQL NoSQL Velocity A regulated and constant flow of data, data aggregation is slow Data arrives at extremely high speeds, large volumes of data aggregation in a short time Structure Structured data in tabular format with fixed schema(Relational) Numerous variety of data set including tabular data, text, audio, images, video, logs, JSON etc.(Non Relational) Scalability They are usually vertically scaled They are mostly based on horizontally scaling architectures, which gives more versatility at a lower cost Query Language only Sequel Python, R, Java, Sequel Hardware A single server is sufficient Requires more than one server Value Business Intelligence, analysis and reporting Complex data mining techniques for pattern finding, recommendation, prediction etc. Optimization Data can be optimized manually(human powered) Requires machine learning techniques for data optimization Storage Storage within enterprises, local servers etc. Usually requires distributed storage systems on cloud or in external file systems People Data Analysts, Database Administrators and Data Engineers Data Scientists, Data Analysts, Database Administrators and Data Engineers Security Security practices for Small Data include user privileges, data encryption, hashing, etc. Securing Big Data systems are much more complicated. Best security practices include data encryption, cluster network isolation, strong access control protocols etc. Nomenclature Database, Data Warehouse, Data Mart Data Lake Infrastructure Predictable resource allocation, mostly vertically scalable hardware. More agile infrastructure with horizontally scalable hardware

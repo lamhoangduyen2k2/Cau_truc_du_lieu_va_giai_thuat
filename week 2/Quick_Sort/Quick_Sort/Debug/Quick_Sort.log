@@ -1,0 +1,3 @@
+﻿  Quick_Sort.cpp
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\week 2\Quick_Sort\Quick_Sort\Quick_Sort.cpp(77,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Quick_Sort.vcxproj -> D:\Duyên\Cấu trúc dữ liệu và giải thuật\week 2\Quick_Sort\Debug\Quick_Sort.exe

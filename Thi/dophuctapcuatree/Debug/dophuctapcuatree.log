@@ -1,0 +1,24 @@
+﻿  dophuctapcuatree.cpp
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\Thi\dophuctapcuatree\dophuctapcuatree.cpp(256,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\Thi\dophuctapcuatree\dophuctapcuatree.cpp(274,33): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\Thi\dophuctapcuatree\dophuctapcuatree.cpp(278,33): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\Thi\dophuctapcuatree\dophuctapcuatree.cpp(283,33): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\Thi\dophuctapcuatree\dophuctapcuatree.cpp(287,33): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\Thi\dophuctapcuatree\dophuctapcuatree.cpp(242,31): warning C4101: 'found': unreferenced local variable
+  dophuctapcuatree.vcxproj -> D:\Duyên\Cấu trúc dữ liệu và giải thuật\Thi\dophuctapcuatree\Debug\dophuctapcuatree.exe

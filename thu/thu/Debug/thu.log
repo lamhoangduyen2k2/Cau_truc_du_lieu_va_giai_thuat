@@ -1,0 +1,9 @@
+﻿  thu.cpp
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\thu\thu\thu.cpp(397,23): warning C4018: '<': signed/unsigned mismatch
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\thu\thu\thu.cpp(402,23): warning C4018: '<': signed/unsigned mismatch
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\thu\thu\thu.cpp(437,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\thu\thu\thu.cpp(475,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\thu\thu\thu.cpp(512,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\thu\thu\thu.cpp(536,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\thu\thu\thu.cpp(561,33): warning C4305: 'initializing': truncation from 'double' to 'float'
+  thu.vcxproj -> D:\Duyên\Cấu trúc dữ liệu và giải thuật\thu\Debug\thu.exe

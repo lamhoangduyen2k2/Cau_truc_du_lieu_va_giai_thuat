@@ -1,0 +1,13 @@
+﻿  kt.cpp
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\kt\kt\kt.cpp(399,23): warning C4018: '<': signed/unsigned mismatch
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\kt\kt\kt.cpp(404,23): warning C4018: '<': signed/unsigned mismatch
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\kt\kt\kt.cpp(439,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\kt\kt\kt.cpp(477,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\kt\kt\kt.cpp(514,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\kt\kt\kt.cpp(538,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\kt\kt\kt.cpp(563,33): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\kt\kt\kt.cpp(564,19): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\kt\kt\kt.cpp(564,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\kt\kt\kt.cpp(564,26): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+D:\Duyên\Cấu trúc dữ liệu và giải thuật\kt\kt\kt.cpp(564,26): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  kt.vcxproj -> D:\Duyên\Cấu trúc dữ liệu và giải thuật\kt\Debug\kt.exe
